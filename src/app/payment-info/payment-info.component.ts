@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./payment-info.component.scss']
 })
 export class PaymentInfoComponent implements OnInit {
-
+  selectedPaymentMethod = 'Credit Card';
+  paymentOptions: string[] = ['Credit Card', 'eCheck'];
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changePaymentOption(event) {
+    this.selectedPaymentMethod = event.value;
   }
 
 }

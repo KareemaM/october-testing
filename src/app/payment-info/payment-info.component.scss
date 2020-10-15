@@ -3,22 +3,69 @@
     margin-top: 10px !important;
 }
 
-.plan-details {
+.plan-details,
+.plan-details-other {
     h4 {
         color: #a7a4a4;
         font-size: 18px;
     }
 
     .plain-details-info {
-        .col-md-6 {
+        .col-6 {
             margin-bottom: 10px;
         }
 
         .row {
-            .col-md-6:last-of-type {
+            .col-6:last-of-type {
                 text-align: right;
                 font-weight: 500;
             }
         }
+    }
+}
+
+.payment-radio-button {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.payment-month-picker .mat-calendar-period-button {
+    pointer-events: none;
+}
+
+.payment-month-picker .mat-calendar-arrow {
+    display: none;
+}
+
+.change-date-btn {
+    .mat-icon {
+        margin-right: 4px;
+        position: relative;
+        top: -2px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .plan-details {
+        display: none !important;
+    }
+
+    .plan-details-other {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .plan-details {
+        display: block !important;
+    }
+
+    .plan-details-other {
+        display: none !important;
     }
 }
