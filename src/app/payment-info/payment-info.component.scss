@@ -1,0 +1,24 @@
+.mat-expansion-panel,
+.mat-card {
+    margin-top: 10px !important;
+}
+
+.plan-details {
+    h4 {
+        color: #a7a4a4;
+        font-size: 18px;
+    }
+
+    .plain-details-info {
+        .col-md-6 {
+            margin-bottom: 10px;
+        }
+
+        .row {
+            .col-md-6:last-of-type {
+                text-align: right;
+                font-weight: 500;
+            }
+        }
+    }
+}
