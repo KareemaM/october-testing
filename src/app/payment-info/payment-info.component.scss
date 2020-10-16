@@ -3,8 +3,7 @@
     margin-top: 10px !important;
 }
 
-.plan-details,
-.plan-details-other {
+.plan-details {
     h4 {
         color: #a7a4a4;
         font-size: 18px;
@@ -47,25 +46,5 @@
         margin-right: 4px;
         position: relative;
         top: -2px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .plan-details {
-        display: none !important;
-    }
-
-    .plan-details-other {
-        display: block !important;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .plan-details {
-        display: block !important;
-    }
-
-    .plan-details-other {
-        display: none !important;
     }
 }

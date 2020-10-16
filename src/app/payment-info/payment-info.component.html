@@ -43,7 +43,7 @@
                 </div>
             </mat-card>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 order-md-first">
             <mat-accordion>
                 <mat-expansion-panel [expanded]="true">
                     <mat-expansion-panel-header>
@@ -159,9 +159,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 mt-3">
-                            <section class="example-section">
+                            <section>
                                 <mat-checkbox [checked]="true">Do not change today. Update future payments only.
                                 </mat-checkbox>
+                                <br>
                                 <mat-checkbox>I have read and accept the payment authorisation.
                                 </mat-checkbox>
                             </section>
@@ -173,48 +174,6 @@
                 </mat-expansion-panel>
             </mat-accordion>
         </div>
-        <div class="col-md-4 plan-details-other">
-            <mat-card>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Your Plan Details</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 plain-details-info">
-                        <div class="row">
-                            <div class="col-6">Contact number:</div>
-                            <div class="col-6">xxxxxxxxxxx</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">Payment option:</div>
-                            <div class="col-6">xxxxxxxxxxx</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">Monthly plan:</div>
-                            <div class="col-6">xxxxxxxxxxx</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">Plan is paid through:</div>
-                            <div class="col-6">xxxxxxxxxxx</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">Plan start date:</div>
-                            <div class="col-6">xxxxxxxxxxx</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">Next billing date:</div>
-                            <div class="col-6">xxxxxxxxxxx</div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <mat-divider></mat-divider>
-                    </div>
-                    <div class="col-md-12 mt-3 text-center">
-                        <button mat-stroked-button color="primary">View Terms &amp; Conditions</button>
-                    </div>
-                </div>
-            </mat-card>
-        </div>
+       
     </div>
 </div>
