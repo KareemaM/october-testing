@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-payment-info',
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class PaymentInfoComponent implements OnInit {
   selectedPaymentMethod = 'Credit Card';
   paymentOptions: string[] = ['Credit Card', 'eCheck'];
-  constructor() { }
+
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
+    console.log(this.authService.userInfo);
+    // GET REQUEST with userInfo.
   }
 
   changePaymentOption(event) {
