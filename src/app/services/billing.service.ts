@@ -14,8 +14,13 @@ export class BillingService {
   constructor(private http: HttpClient) { }
 
   getBillingInfo(body: any) {
-    const url = this.url + '/userId/zipcode/';
-    return this.http.get(url).pipe(
+    const url = 'https://restcountries-v1.p.rapidapi.com/all';
+    return this.http.get(url, {
+      headers: {
+        "x-rapidapi-host": "restcountries-v1.p.rapidapi.com",
+        "x-rapidapi-key": "e435e00918mshed1f90d7cb251b2p1b7a25jsnb8024b17bba1"
+      }
+    }).pipe(
       retry(1),
       catchError(this.handleError)
     );

@@ -18,9 +18,10 @@ export class PaymentInfoComponent implements OnInit {
     // GET REQUEST with userInfo.
     this.billingService.getBillingInfo(this.authService.userInfo).subscribe((data) => {
       console.log(data);
-      this.isLoading = false;
+      this.isLoading = false; // Once data is fetched we can release is loading
     }, error => {
       console.log(error)
+      this.isLoading = false; // if any error, release is loading and display error
     })
   }
 

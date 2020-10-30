@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row">
+    <div class="row" *ngIf="!isLoading">
         <div class="col-md-4 plan-details">
             <mat-card>
                 <div class="row">
@@ -167,5 +167,8 @@
                 </mat-expansion-panel>
             </mat-accordion>
         </div>
+    </div>
+    <div class="loader" *ngIf="isLoading">
+        <p>Loading....</p>
     </div>
 </div>
